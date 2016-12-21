@@ -1,0 +1,42 @@
+<div class="row opacityContainer">
+    <div class="col s12 m12 l12">
+        <div class="card-panel hoverable z-depth-3">
+            <h4 class="header center grey-text text-darken-3 thin">EMPLOYEE.MAP</h4>
+            <div class="row center">
+                <label style="color: darkslategrey; font-size: smaller;" class="center">The map below displays a list of all employees around Europe.</label>
+            </div>
+            <div class="row center employeeMap">
+                <label style="color: darkslategrey; font-size: smaller;" class="center"></label>
+                {{employee-data-map data=(readonly model)}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row opacityContainer">
+    <div class="col s12 m12 l12">
+        <div class="card-panel hoverable z-depth-3">
+            <h4 class="header center grey-text text-darken-3 thin">LOCATIONS</h4>
+            <div class="row center">
+                <label style="color: darkslategrey; font-size: smaller;" class="center">Employees per Location.</label>
+            </div>
+            <div class="row center">
+                <table class="bordered striped centered responsive-table">
+                    <thead>
+                        <tr>
+                            <th data-field="country">COUNTRY</th>
+                            <th data-field="numEmployees">NO. EMPLOYEES</th>                                    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each model as |employeeData|}}
+                            <tr>
+                                <td>{{employeeData.countryName}}</td>
+                                <td>{{employeeData.totalEmployees}}</td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

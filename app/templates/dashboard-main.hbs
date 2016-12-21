@@ -1,0 +1,68 @@
+<div class="container opacityContainer">
+    <div class="section">
+      <div class="row">
+          <div class="col s12 container">
+              <div class="card-panel hoverable z-depth-3">
+                    <h3 class="header center grey-text text-darken-3 thin">MAIN.DASHBOARD.VIEW</h3>
+                    <div class="divider"></div>
+                    <div class="center">
+                        <p class="light">Welcome to the main dashboard view! Select one of the dashboards below to view the relevant, associated information.</p>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m4 container">
+          <div class="icon-block card-panel hoverable z-depth-3">
+            <h2 class="center"><i class="material-icons">perm_identity</i></h2>
+            <h5 class="center">EMPLOYEES</h5>
+            <div class="divider"></div>
+            <div class="center">
+                <p class="light">View a dashboard displaying the number of employees at various locations all around the world.</p>
+            </div>
+            <div class="divider"></div>
+            <div class="row"></div>
+            <div class="center">
+                {{#link-to 'geospatial-view' class="waves-effect waves-light btn"}}
+                    VIEW
+                {{/link-to}}
+            </div>           
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block card-panel hoverable z-depth-3">
+            <h2 class="center"><i class="material-icons">grade</i></h2>
+            <h5 class="center">KEY.METRICS</h5>
+            <div class="divider"></div>
+            <div class="center">
+                <p class="light">This dashboard contains relevant information about all logged issues and paying customers.</p>
+            </div>
+            <div class="divider"></div>
+            <div class="row"></div>
+            <div class="center">
+                {{#link-to 'key-metrics-view' class="waves-effect waves-light btn"}}
+                    VIEW
+                {{/link-to}}
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block  card-panel hoverable z-depth-3">
+            <h2 class="center"><i class="material-icons">clear_all</i></h2>
+            <h5 class="center">DATA.VIEW</h5>
+            <div class="divider"></div>
+            <div class="center">
+                <p class="light">Displays a list of all issues logged in the system.</p>
+            </div>
+            <div class="divider"></div>
+            <div class="row"></div>
+            <div class="center">
+                {{#link-to 'data-view' class="waves-effect waves-light btn"}}
+                    VIEW
+                {{/link-to}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

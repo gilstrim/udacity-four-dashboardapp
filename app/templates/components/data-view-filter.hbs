@@ -1,0 +1,10 @@
+<div class="row center container">
+    <br />
+    <div class="input-field col s12">
+		<i class="material-icons prefix">search</i>
+        {{input id="txtTableFilter" name="tableFilter" type="text" value=value key-up=(action 'handleFilterEntry') class="light" }}        
+		<label for="txtTableFilter">Filter By Status, Header, or Description</label>
+	</div> 
+</div>
+
+{{yield results}}
