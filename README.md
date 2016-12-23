@@ -1,7 +1,6 @@
-# Ember-quickstart
+# Udacity - Senior Web Developer Nanodegree - Project 4 - Corporate Dashboard Application
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is the fourth project for the Udacity Nanodegree: a corporate dashboard.
 
 ## Prerequisites
 
@@ -16,32 +15,22 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd ember-quickstart`
+* `cd udacity-four-dashboardapp`
 * `npm install`
 * `bower install`
 
 ## Running / Development
 
 * `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
+* Visit the app at [http://localhost:4200]
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+In order to create a production ready build with compression, minification, and concatenation, run the following command:
+
+* ember build -prod
+
+All relevant files will be created in the dist folder. 
 
 ## Further Reading / Useful Links
 
@@ -50,8 +39,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
-## Todo
-
-* Main page: $(".button-collapse").sideNav(); / Not setting mobile menu
-* Everywhere page: Mobile menu - when click, doesn't remove focus  
