@@ -28,7 +28,7 @@ You will need the following things properly installed on your computer.
 
 In order to create a production ready build with compression, minification, and concatenation, run the following command:
 
-* ember build -prod
+* `ember build -prod`
 
 All relevant files will be created in the dist folder. 
 
