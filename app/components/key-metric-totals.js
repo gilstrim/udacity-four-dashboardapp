@@ -15,10 +15,10 @@ export default Ember.Component.extend({
         $.each(issueData, function(key, value) {
             totalIssues = totalIssues + 1;
 
-            if (value.issue_status === 'OPEN') {
+            if (value.open_closed_status === 'OPEN') {
                 totalOpenIssues = totalOpenIssues + 1;
             }
-            else if (value.issue_status === 'CLOSED') {
+            else if (value.open_closed_status === 'CLOSED') {
                 totalClosedIssues = totalClosedIssues + 1;
             }
         });
@@ -48,10 +48,10 @@ export default Ember.Component.extend({
         $.each(issueData, function(key, value) {
             totalIssues = totalIssues + 1;
 
-            if (value.issue_status === 'OPEN') {
+            if (value.open_closed_status === 'OPEN') {
                 totalOpenIssues = totalOpenIssues + 1;
             }
-            else if (value.issue_status === 'CLOSED') {
+            else if (value.open_closed_status === 'CLOSED') {
                 totalClosedIssues = totalClosedIssues + 1;
             }
         });
